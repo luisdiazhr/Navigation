@@ -1,11 +1,13 @@
 # Deep Q-Network in Navigation 
 
-In this project, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to a action-value function. The environment has a state space of 37 dimensions. Those correspond to data such as the agent's velocity and ray-based meaurements of the surrounding. The agent has a set of four available actions:
+In this project, an agent navigates in a square world full of yellow and blue bananas. The agent receives a reward of +1 when collecting a yellow banana, and a reward of -1 for collecting a blue banana. Our goal is to train the agent to navigate and collect as many yellow bananas as possible. The task is episodic and the environment is considered to be solved when the agent gets an average score of +13 over 100 consecutive episodes. The environment has a state space of 37 dimensions. Those correspond to data such as the agent's velocity and ray-based meaurements of the surrounding. The agent has a set of four available actions:
 
 * 0: forward
 * 1: backward
 * 2: left
 * 3: right
+
+To accomplish our goal, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to a action-value function. 
 
 * Initialize replay memory D with capacity N
 * Initialize weights of the DQN agent
@@ -29,6 +31,16 @@ As the agent starts interacting with the environment, the experiences are stored
 | Soft update     | 1e-3          |
 
 ### 3. Training parameters
+
+The following table shows the parameters used for training. Adam is used as the training optimizer.
+
+| Parameter          | Value         |
+| -------------------|:-------------:| 
+| Number of episodes | 2000          | 
+| Timesteps per episode | 1000            |  
+| Start epsilon   | 1.0          |
+| End epsilon | 0.01         |
+| Epsilon decrease factor   | 0.995             |
 
 ## Results
 
