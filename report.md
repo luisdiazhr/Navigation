@@ -3,7 +3,7 @@
 This is the report
 
 
-## Learning Algorithm 
+## Deep Q-Network in Navigation 
 
 In this project, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to a action-value function. The 
 
@@ -18,6 +18,15 @@ The DQN algorithm uses two separate neural networks with identical architectures
 ### 2. Replay Memory
 
 As the agent starts interacting with the environment, the experiences are stored in a replay memory. Then, a random batch is extracted from this memory and the neural network learns from it by using gradient descent. The act of extracting a random batch is called experience replay. This randomness breaks correlation among experiences and allows the agent to learn from the same experiences multiple times. It is important to say that learning cannot take place until there is a good amount of experiences in the replay memory. The following table shows the parameters used for the experience replay:
+
+| Parameter       | Value         |
+| ----------------|:-------------:| 
+| Buffer size     | 1e5           | 
+| Batch size      | 64            |  
+| Learning rate   | 5e-4          |
+| Discount factor | 0.99          |
+| Update factor   | 4             |
+| Soft update     | 1e-3          |
  
 ## Future improvements
 
