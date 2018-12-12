@@ -1,9 +1,4 @@
-# Report
-
-This is the report
-
-
-## Deep Q-Network in Navigation 
+# Deep Q-Network in Navigation 
 
 In this project, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to a action-value function. The 
 
@@ -27,6 +22,8 @@ As the agent starts interacting with the environment, the experiences are stored
 | Discount factor | 0.99          |
 | Update factor   | 4             |
 | Soft update     | 1e-3          |
+
+## Results
  
 ## Future improvements
 
