@@ -1,6 +1,11 @@
 # Deep Q-Network in Navigation 
 
-In this project, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to a action-value function. The 
+In this project, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to a action-value function. The environment has a state space of 37 dimensions. Those correspond to data such as the agent's velocity and ray-based meaurements of the surrounding. The agent has a set of four available actions:
+
+* 0: forward
+* 1: backward
+* 2: left
+* 3: right
 
 * Initialize replay memory D with capacity N
 * Initialize weights of the DQN agent
@@ -8,7 +13,7 @@ In this project, the DQN algorithm is used to solve the environment. This algori
 
 ### 1. Architecture
 
-The DQN algorithm uses two separate neural networks with identical architectures. The purpose of this is to The architecture is implemented by the `QNetwork` class located in `model.py`. The model includes an input layer, a couple of hidden layers with 64 units each, followed by a fully connected layer. The dimension of the input layer is 37 neurons, which is the same as the state dimension. The size of the output layer corresponds to the action size space which in this case is . The output is a value for each possible action given the current state. The implementation of the DQN Agent is contained in `dqn_agent.py`. 
+The DQN algorithm uses two separate neural networks with identical architectures. Basically, the main purpose of having two networks is that instead of updating the local network each time step, what the algorithm does is to update the weights of the target Q network less often to avoid harmful correlations. The neural network architecture is implemented by the `QNetwork` class located in `model.py`. The model includes an input layer, a couple of hidden layers with 64 units each, followed by a fully connected layer. The dimension of the input layer is 37 neurons, which is the same as the state dimension. The size of the output layer corresponds to the action size space which in this case is . The output is a value for each possible action given the current state. The implementation of the DQN Agent is contained in `dqn_agent.py`. 
 
 ### 2. Replay Memory
 
@@ -23,7 +28,11 @@ As the agent starts interacting with the environment, the experiences are stored
 | Update factor   | 4             |
 | Soft update     | 1e-3          |
 
+### 3. Training parameters
+
 ## Results
+
+
  
 ## Future improvements
 
