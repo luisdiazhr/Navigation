@@ -1,11 +1,7 @@
 # Report: Deep Q-Network for Navigation 
 
 ### 1. Introduction
-To accomplish our goal, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to an action-value function. 
-
-* Initialize replay memory D with capacity N
-* Initialize weights of the DQN agent
-* Since we have a fixed Q target network, weights are just copied from the primary network
+To accomplish our goal, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to an action-value function. In the beginning the neural network starts with random weights. Basically the algorithm starts choosing actions from the environment according to the epsilon greedy policy. Those experiences are stored away in a replay memory. Then, the agent uses that memory and extracts mini batches of experiences randomly to learn by using gradient descent. 
 
 ### 2. Architecture
 
