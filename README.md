@@ -16,7 +16,9 @@ The goal of this project is to get the agent gets an average score of +13 over 1
 
 ### Installation
 
-1. Download the environment from one of the links below. You need only select the environment that matches your operating system:
+1. You need to have python 3 installed on your machine, as well as pytorch.
+
+2. Download the environment from one of the links below. You need only select the environment that matches your operating system:
 
 * Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 * Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
