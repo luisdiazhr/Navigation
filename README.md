@@ -3,7 +3,7 @@
 ### Introduction
 In this project, an agent navigates in a square world full of yellow and blue bananas. 
 
-
+![alt text](agent.gif "Agent")
 
 
 
@@ -18,4 +18,4 @@ The goal of this project is to get the agent gets an average score of +13 over 1
 
 ### Getting started
 
-Follow the instructions in Navigation.ipynb to get started. Use Jupiter worskpaces in order to download the environment. 
+Follow the instructions in `Navigation.ipynb` to get started. Use Jupiter worskpaces in order to download the environment. 
