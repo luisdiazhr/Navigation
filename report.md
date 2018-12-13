@@ -44,7 +44,9 @@ The following table shows the parameters used for training. Adam is used as the 
 
 ## Results
 
+The environment is considered to be solved when the agent gets an average reward of +13 over 100 consecutive episodes. In the plot below it is shown that the agent solves the task in 472 episodes.
 
+![alt text]( rewards_plot.png "Rewards Plot")
  
 ## Future improvements
 
