@@ -1,4 +1,4 @@
-# Deep Q-Network in Navigation 
+# Report Deep Q-Network for Navigation 
 
 To accomplish our goal, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to a action-value function. 
 
