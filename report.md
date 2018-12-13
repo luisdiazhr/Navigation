@@ -1,7 +1,7 @@
 # Report: Deep Q-Network for Navigation 
 
 ### 1. Introduction
-To accomplish our goal, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to a action-value function. 
+To accomplish our goal, the DQN algorithm is used to solve the environment. This algorithm uses a neural network to map the state to an action-value function. 
 
 * Initialize replay memory D with capacity N
 * Initialize weights of the DQN agent
@@ -38,7 +38,7 @@ The following table shows the parameters used for training. Adam is used as the 
 
 ### 5. Results
 
-The environment is considered to be solved when the agent gets an average reward of +13 over 100 consecutive episodes. In the plot below it is shown that the agent solves the task in 472 episodes.
+The environment is considered to be solved when the agent gets an average reward of +13 over 100 consecutive episodes. In the plot below it is shown that the agent solves the task in 472 episodes. The weights are saved in the file `checkpoint.tbh` located in the repository main folder.
 
 ![alt text]( rewards_plot.png "Rewards Plot")
  
